@@ -15,3 +15,7 @@ def encrypt_plaintext(message, keyword):
 
         # Convert ciphertext back to letter value
             ciphertext_char = chr(ciphertext_val + 65)
+            ciphertext += ciphertext_char
+        else:
+            ciphertext += i
+    return ciphertext
