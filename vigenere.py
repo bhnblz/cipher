@@ -6,7 +6,7 @@ def encrypt_plaintext(message, keyword):
     for i in message:
         if i.isalpha():
         # Convert into numerical value
-            message_val = ord(A) - 65
+            message_val = ord(i) - 65
             key_val = ord(keyword[index]) - 65
             index = (index + 1) % len(keyword)
         
@@ -22,6 +22,9 @@ def encrypt_plaintext(message, keyword):
 
 # Ask for the input
 message = input("What is the message? ")
-keyword = input("What is the keywprd? ")
+keyword = input("What is the keyword? ")
 
 ciphertext = encrypt_plaintext(message, keyword)
+
+# Print the output
+print("The ciphertext is: " + ciphertext)
