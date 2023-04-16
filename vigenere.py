@@ -24,4 +24,4 @@ def encrypt_plaintext(message, keyword):
 message = input("What is the message? ")
 keyword = input("What is the keywprd? ")
 
-ciphertext = encrypt(message, keyword)
+ciphertext = encrypt_plaintext(message, keyword)
