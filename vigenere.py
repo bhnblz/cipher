@@ -9,3 +9,6 @@ def encrypt_plaintext(message, keyword):
             message_val = ord(A) - 65
             key_val = ord(keyword[index]) - 65
             index = (index + 1) % len(keyword)
+        
+        # Encrypt the plaintext
+            ciphertext_val = (message_val + key_val) % 26
