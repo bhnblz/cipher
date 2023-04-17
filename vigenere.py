@@ -1,3 +1,10 @@
+# Import pyfiglet module to change the font
+import pyfiglet
+
+# Import colorama module to change color of the font
+import colorama
+from colorama import Fore
+
 # Use vigenere cipher to encrypt plaintext
 def encrypt_plaintext(message, keyword):
     ciphertext = ""
