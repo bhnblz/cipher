@@ -5,6 +5,10 @@ import pyfiglet
 import colorama
 from colorama import Fore
 
+# Apply pyfiglet and colorama module
+title = "The Vigenere Cipher"
+print(pyfiglet.figlet_format(title, font = "digital") + Fore.LIGHTCYAN_EX)
+
 # Use vigenere cipher to encrypt plaintext
 def encrypt_plaintext(message, keyword):
     ciphertext = ""
