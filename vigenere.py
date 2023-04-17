@@ -38,4 +38,6 @@ keyword = input("What is the keyword? ")
 ciphertext = encrypt_plaintext(message, keyword)
 
 # Print the output
-print("The ciphertext is: " + ciphertext)
+print("=" * 45)
+print("*" * 45)
+print(Fore.LIGHTMAGENTA_EX + ("\033[7mThe ciphertext is: " + ciphertext))
